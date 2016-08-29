@@ -43,9 +43,9 @@ rm /Library/Preferences/org.cups.printers.plist
 dseditgroup -o edit -n /Local/Default -a everyone -t group lpadmin
 
 #Add MCI Printers
-lpadmin -E -p "MCIKyocera4551" -v "lpd://10.1.8.207/MCI-CS4551Color" -D "MCI-Kyocera 4551" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Kyocera CS 4551ci.PPD" -o printer-is-shared=false -E -o HardDisk=True
-lpadmin -E -p "MCIXerox7760GX" -v "lpd://10.1.8.209/MCI-Xerox7760-Creative2" -D "MCI-Xerox 7760GX" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Xerox Phaser 7760GX.gz" -o printer-is-shared=false -E
-lpadmin -E -p "MCIXerox7800DX" -v "lpd://10.1.8.210/MCI-Xerox7800-Creative1" -D "MCI-Xerox 7800DX" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Xerox Phaser 7800DX.gz" -o printer-is-shared=false -E
-lpadmin -E -p "MCIXeroxPhaser8560DN" -v "lpd://10.1.8.21/MCI-Xerox8560-EXEC" -D "MCI-Xerox Phaser 8560DN" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Xerox Phaser 8560DN.gz" -o printer-is-shared=false -E
+lpadmin -E -p "MCIKyocera4551" -v "lpd://10.1.8.45/MCI-CS4551Color" -D "MCI-Kyocera4551" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Kyocera CS 4551ci.PPD" -o printer-is-shared=false -E -o HardDisk=True
+lpadmin -E -p "MCIXerox7760GX" -v "lpd://10.1.8.45/MCI-Xerox7760-Creative2" -D "MCI-Xerox7760GX C2" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Xerox Phaser 7760GX.gz" -o printer-is-shared=false -E
+lpadmin -E -p "MCIXerox7800DX" -v "lpd://10.1.8.45/MCI-Xerox7800-Creative1" -D "MCI-Xerox7800DX C1" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Xerox Phaser 7800DX.gz" -o printer-is-shared=false -E
+lpadmin -E -p "MCIXeroxPhaser8560DN" -v "lpd://10.1.8.45/MCI-Xerox8560-EXEC" -D "MCI-Xerox8560DN Exec" -L "MCI - 920 Main St KCMO" -P "/Library/Printers/PPDs/Contents/Resources/Xerox Phaser 8560DN.gz" -o printer-is-shared=false -E
 
 exit 0
